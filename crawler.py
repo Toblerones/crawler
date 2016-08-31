@@ -19,7 +19,7 @@ ajaxRequest={'cmd': 'logonStep1', 'shortCardNumber': '111111111111'}
 url = 'https://credit.hsbc.com.au/ccol/ccol'
 
 req = urllib2.Request(url) 
-req.add_header('Content-Type', 'application/json')
+req.add_header('Content-Type', 'application/json1')
 response = urllib2.urlopen(req, json.dumps(ajaxRequest)) 
 the_page = response.read()
 
